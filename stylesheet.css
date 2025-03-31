@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid black;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__search_input {
@@ -26,6 +30,7 @@ body {
     border: none;
     outline: none;
     margin: 0px;
+    background-color: transparent;
 }
 
 .navbar__title__name {
@@ -48,6 +53,29 @@ body {
     gap: 20px;
     text-align: center;
 }
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    top: 200%;
+    width: 100px;
+    right: 0%;
+    display: none;
+}
+
+.mylearning:hover{
+    .mylearning__popup{
+        display: block;
+    }
+}
+
 
 .catagories {
     display: flex;
@@ -75,6 +103,23 @@ body {
     width: 100%;
 }
 
+.saleimage{
+    position: relative;
+}
+.offers{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 28%;
+    padding: 25px;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .courses_recommended {
     padding: 10px;
 }
