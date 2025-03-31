@@ -92,11 +92,14 @@ body {
     text-align: center;
     transition: 0.5s;
     cursor: pointer;
+    border: 1px solid #A335EE ;
 }
 
 .catagories p:hover {
     background-color: white;
     color: #A335EE;
+    border: 1px solid #A335EE ;
+    
 }
 
 .saleimage img {
@@ -119,7 +122,24 @@ body {
     padding-bottom: 30px;
     padding-right: 30px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 .courses_recommended {
     padding: 10px;
 }
