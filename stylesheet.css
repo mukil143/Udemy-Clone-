@@ -55,6 +55,8 @@ body {
     text-align: center;
 }
 
+
+
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -76,6 +78,7 @@ body {
         display: block;
     }
 }
+
 
 
 .catagories {
@@ -236,7 +239,7 @@ body {
     }
     .offers{
         font-size: 5px;
-        padding: 20px;
+        padding: 10px;
     }
 
     .catagories{
